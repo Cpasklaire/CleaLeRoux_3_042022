@@ -1,5 +1,12 @@
 @import "utils/_variable.scss";
-@import "utils/_reset.scss";
 
 @import "composants/_header.scss";
+@import "composants/_footer.scss";
 @import "composants/_popup.scss";
+
+@import "layout/_index.scss";
+@import "layout/_actu.scss";
+@import "layout/_conf.scss";
+@import "layout/_contact.scss";
+@import "layout/_infos.scss";
+@import "layout/_prog.scss";

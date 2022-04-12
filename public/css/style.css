@@ -1,108 +1,82 @@
+@charset "UTF-8";
 @font-face {
-  font-family: "unashamed";
-  src: url(./police/unashamed/UnashamedDemo.otf);
+  font-family: "cheddar";
+  src: url(../../public/police/Cheddar\ Gothic\ Sans.otf);
 }
 @font-face {
   font-family: "opendyslexic";
-  src: url(./police/opendyslexic/OpenDyslexic-Regular.otf);
+  src: url(../../public/police/OpenDyslexic-Regular.otf);
 }
 * {
-  font-family: "modern", Arial, serif;
+  font-family: "opendyslexic", Arial, serif;
   color: black;
   text-decoration: none;
   background-color: transparent;
   margin: 0;
   border: none;
-}
-
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
+  list-style-type: none;
 }
 
 body {
-  line-height: 1;
+  background-color: #F8EBCB;
 }
 
-ol, ul {
-  list-style: none;
+header {
+  background-color: #102832;
+}
+header .pc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 3%;
+  margin-right: 3%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+header .pc a, header .pc nav, header .pc h1 {
+  color: #F8EBCB;
+}
+header .pc h1 {
+  font-family: "cheddar";
+  font-size: 3em;
+}
+header .pc nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-basis: 25%;
 }
 
-blockquote, q {
-  quotes: none;
+footer {
+  background-color: #102832;
+}
+footer nav {
+  display: flex;
+  flex-direction: row;
+  margin-left: 3%;
+}
+footer nav li {
+  margin-left: 3%;
+}
+footer nav li a {
+  color: #F8EBCB;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-h1 {
-  text-align: center;
-  font-family: Tahoma, Arial, sans-serif;
-  color: #06D85F;
-  margin: 80px 0;
-}
-
-.box {
-  width: 40%;
-  margin: 0 auto;
-  background: rgba(255, 255, 255, 0.2);
-  padding: 35px;
-  border: 2px solid #fff;
-  border-radius: 20px/50px;
-  background-clip: padding-box;
-  text-align: center;
-}
-
-.button {
-  font-size: 1em;
-  padding: 10px;
-  color: #fff;
-  border: 2px solid #06D85F;
-  border-radius: 20px/50px;
-  text-decoration: none;
+.prog .button {
+  margin-top: 5%;
+  margin-left: 35%;
+  padding: 0.5%;
+  width: 30%;
+  border: 3px solid #102832;
+  box-shadow: 5px 5px 4px #0B717F;
+  background-color: #F8EBCB;
   cursor: pointer;
-  transition: all 0.3s ease-out;
 }
-
-.button:hover {
-  background: #06D85F;
+.prog .button:hover {
+  color: #0B717F;
 }
-
-.overlay {
+.prog .overlay {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -113,56 +87,152 @@ h1 {
   visibility: hidden;
   opacity: 0;
 }
-
-.overlay:target {
+.prog .overlay:target {
   visibility: visible;
   opacity: 1;
 }
-
-.popup {
+.prog .popup {
   margin: 70px auto;
   padding: 20px;
   background: #fff;
   border-radius: 5px;
-  width: 30%;
+  width: 50%;
   position: relative;
   transition: all 5s ease-in-out;
 }
-
-.popup h2 {
+.prog .popup h2 {
   margin-top: 0;
-  color: #333;
-  font-family: Tahoma, Arial, sans-serif;
 }
-
-.popup .close {
-  position: absolute;
-  top: 20px;
-  right: 30px;
+.prog .popup .close {
   transition: all 200ms;
-  font-size: 30px;
-  font-weight: bold;
   text-decoration: none;
   color: #333;
 }
-
-.popup .close:hover {
-  color: #06D85F;
+.prog .popup .close:hover {
+  color: #0B717F;
 }
-
-.popup .content {
+.prog .popup .content {
   max-height: 30%;
   overflow: auto;
 }
+.prog form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+.prog form input {
+  border: 3px solid #102832;
+  width: 50%;
+}
+.prog .bouton {
+  margin: 5%;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.prog .bouton a, .prog .bouton button {
+  size: 1em;
+  margin-top: 3%;
+  margin-left: 35%;
+  padding: 1%;
+  border: 3px solid #102832;
+  box-shadow: 5px 5px 4px #0B717F;
+  cursor: pointer;
+}
 
-@media screen and (max-width: 700px) {
-  .box {
-    width: 70%;
-  }
+.index .festival {
+  margin: 3%;
+}
 
-  .popup {
-    width: 70%;
-  }
+.actualité {
+  margin: 5%;
+}
+.actualité h2 {
+  margin-bottom: 3%;
+}
+.actualité article {
+  margin-bottom: 3%;
+  padding: 1%;
+  border: 3px solid #102832;
+  box-shadow: 5px 5px 4px #0B717F;
+}
+.actualité article h3 {
+  color: #D4566C;
+}
+.actualité article img {
+  width: 15%;
+  float: right;
+}
+
+.confidentialité {
+  margin: 3%;
+}
+
+.contact {
+  margin: 3%;
+}
+.contact h2 {
+  color: #D4566C;
+}
+.contact .adress {
+  margin-bottom: 3%;
+  padding: 1%;
+  border: 3px solid #102832;
+  box-shadow: 5px 5px 4px #0B717F;
+  width: 10%;
+}
+.contact form {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+.contact form input, .contact form textarea {
+  border: 3px solid #102832;
+}
+.contact form button {
+  margin-top: 3%;
+  margin-left: 35%;
+  padding: 1%;
+  width: 30%;
+  border: 3px solid #102832;
+  box-shadow: 5px 5px 4px #0B717F;
+  cursor: pointer;
+}
+
+.infos {
+  margin: 3%;
+}
+.infos h2 {
+  color: #D4566C;
+}
+.infos img {
+  width: 40%;
+}
+
+.Sprog {
+  margin: 3%;
+}
+.Sprog .row {
+  display: flex;
+}
+.Sprog .row .jour {
+  margin: 3%;
+  padding: 1%;
+  border: 3px solid #102832;
+  box-shadow: 5px 5px 4px #0B717F;
+  width: 40%;
+}
+.Sprog .row .jour h3 {
+  color: #D4566C;
+}
+.Sprog .row .jour img {
+  width: 15%;
+  float: right;
+}
+.Sprog .row .jour span {
+  margin-bottom: 3%;
 }
 
 /*# sourceMappingURL=style.css.map */

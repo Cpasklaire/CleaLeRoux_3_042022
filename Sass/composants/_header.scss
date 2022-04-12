@@ -1,0 +1,27 @@
+header{
+    background-color: $couleur-secondaire;
+    
+    .pc{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 3%;
+        margin-right: 3%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        a,nav,h1{
+            color: $couleur-texte;
+        }
+        h1{
+            font-family: $font-titre;
+            font-size: 3em;
+        }
+        nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-basis: 25%;
+        }
+    }
+}

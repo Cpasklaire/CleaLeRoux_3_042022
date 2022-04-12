@@ -1,0 +1,14 @@
+footer{
+    background-color: $couleur-secondaire;
+    nav{
+        display: flex;
+        flex-direction: row;
+        margin-left: 3%;
+        li{
+            margin-left: 3%;
+            a{
+                color: $couleur-texte;
+            }
+        }
+    }
+}

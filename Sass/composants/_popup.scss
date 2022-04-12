@@ -1,33 +1,16 @@
-h1 {
-    text-align: center;
-    font-family: Tahoma, Arial, sans-serif;
-    color: #06D85F;
-    margin: 80px 0;
-  }
-  
-  .box {
-    width: 40%;
-    margin: 0 auto;
-    background: rgba(255,255,255,0.2);
-    padding: 35px;
-    border: 2px solid #fff;
-    border-radius: 20px/50px;
-    background-clip: padding-box;
-    text-align: center;
-  }
-  
+.prog{
   .button {
-    font-size: 1em;
-    padding: 10px;
-    color: #fff;
-    border: 2px solid #06D85F;
-    border-radius: 20px/50px;
-    text-decoration: none;
+    margin-top: 5%;
+    margin-left: 35%;
+    padding: 0.5%;
+    width: 30%;
+    border: 3px solid $couleur-secondaire;
+    box-shadow: 5px 5px 4px $couleur-primaire;
+    background-color: $couleur-texte;
     cursor: pointer;
-    transition: all 0.3s ease-out;
   }
   .button:hover {
-    background: #06D85F;
+    color: $couleur-primaire;
   }
   
   .overlay {
@@ -51,39 +34,50 @@ h1 {
     padding: 20px;
     background: #fff;
     border-radius: 5px;
-    width: 30%;
+    width: 50%;
     position: relative;
     transition: all 5s ease-in-out;
   }
   
   .popup h2 {
     margin-top: 0;
-    color: #333;
-    font-family: Tahoma, Arial, sans-serif;
   }
   .popup .close {
-    position: absolute;
-    top: 20px;
-    right: 30px;
     transition: all 200ms;
-    font-size: 30px;
-    font-weight: bold;
     text-decoration: none;
     color: #333;
   }
   .popup .close:hover {
-    color: #06D85F;
+    color: $couleur-primaire;
   }
   .popup .content {
     max-height: 30%;
     overflow: auto;
   }
-  
-  @media screen and (max-width: 700px){
-    .box{
-      width: 70%;
-    }
-    .popup{
-      width: 70%;
+  form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    input{
+      border: 3px solid $couleur-secondaire;
+      width: 50%;
     }
   }
+  .bouton{
+    margin: 5%;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    a,button{
+      size: 1em;
+      margin-top: 3%;
+      margin-left: 35%;
+      padding: 1%;
+      border: 3px solid $couleur-secondaire;
+      box-shadow: 5px 5px 4px $couleur-primaire;
+      cursor: pointer;
+    }
+  }
+}

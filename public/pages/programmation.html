@@ -11,7 +11,7 @@
 
     <header>
         <div class="pc">
-            <a href="/../../index.html" class="titre">Les films en plein air</a>
+            <a href="/../../index.html" class="titre"><h1>Les films en plein air</h1></a>
             <nav class="__tete">
                 <li><a href="programmation.html">Programmation et reservation</a></li>
                 <li><a href="actualite.html">Actualité</a></li>
@@ -19,38 +19,74 @@
         </div>
     </header>
 
-    <Section class="5aout">
-        <h2>Le 5 aûot</h2>
-            <div class="__film">
-                <h3>4rooms</h3>
-                <img src="" alt="">
-                <span>sinopsys : </span>
-                <span>Horaire : </span>
-                <button href="#popup-4rooms">Réservation</button>
-                <div id="popup-4rooms" class="overlay">
-                    <div class="popup">
-                        <a class="close" href="#">&times;</a>
-                        <div class="apercu">
-                            <div class="titre">
-                                <h4>Création un réseau social d’entreprise</h4>    
-                            </div>
-                        </div>
-                    </div>
+    <Section class="Sprog">
+        <div class="row">
+            <div class="jour">
+                <h2>Le 5 août</h2>
+                <div class="5">
+                    <h3>Troll 2</h3>
+                    <img src="../images/Troll.jpg" alt="Affiche film Troll 2">
+                    <span>Genre : Horreur</span> <br>
+                    <span>Sinopsys : La famille Waits passe ses vacances dans la ville de Nilbog. Rapidement, leurs vacances tournent au cauchemar, car la ville est infestée de gobelins végétariens qui veulent transformer la famille en plantes pour les manger.</span> <br>
+                    <a class="button" href="#popup1">Réserver</a>
                 </div>
-                <div class="box">
-                    <a class="button" href="#popup1">Let me Pop up</a>
+            </div>
+            <div class="jour">
+                <h2>Le 6 août</h2>
+                <div class="5">
+                    <h3>Appel d'urgence</h3>
+                    <img src="../images/Miracletheatrical.jpg" alt="Affiche film Appel d'urgence">
+                    <span>Genre : Action</span> <br>
+                    <span>Sinopsys : Une nuit, après un rendez-vous raté avec la femme de sa vie, un homme reçoit dans une cabine téléphonique l'appel désespéré d'un jeune militaire qui tente de joindre son père et qui lui apprend, affolé, que des missiles nucléaires vont s'abattre sur Los Angeles dans 1 heure et 10 minutes.</span> <br>
+                    <a class="button" href="#popup1">Réserver</a>
                 </div>
-                
-                <div id="popup1" class="overlay">
-                    <div class="popup">
-                        <h2>Here i am</h2>
-                        <a class="close" href="#">&times;</a>
-                        <div class="content">
-                            Thank to pop me out of that button, but now i'm done so you can close this window.
-                        </div>
-                    </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="jour">
+                <h2>Le 7 août</h2>
+                <div class="5">
+                    <h3>Présentateur vedette : La Légende de Ron Burgundy</h3>
+                    <img src="../images/Présentateurvedette.jpg" alt="Affiche film Présentateur vedette : La Légende de Ron Burgundy">
+                    <span>Genre : Comédie</span> <br>
+                    <span>Sinopsys : Durant les années 1970, Ron Burgundy, présentateur vedette, règne en maître sur San Diego avec toute son équipe : Brian Fantana, reporter, Brick Tamland, présentateur météo et Champ Kind, journal des sports. Mais l'arrivée de la journaliste Veronica Corningstone parmi l'équipe de Channel 4 vient chambouler la hiérarchie. Les hostilités entre Ron et Veronica éclatent alors pour devenir le présentateur du journal.</span> <br>
+                    <a class="button" href="#popup1">Réserver</a>
                 </div>
+            </div>
+            <div class="jour">
+                <h2>Le 8 août</h2>
+                <div class="5">
+                    <h3>Save the Green Planet!</h3>
+                    <img src="../images/SavetheGreenPlanet.jpg" alt="Affiche film Save the Green Planet!">
+                    <span>Genre : Science-fiction</span> <br>
+                    <span>Sinopsys : Byeong-gu croit que la Terre va être envahie par une horde d'extra-terrestres. Il décide pour y parer d'enlever celui qu'il croit être l'agent numéro un des aliens : le richissime et puissant patron d'une entreprise de produits chimiques...</span> <br>
+                    <a class="button" href="#popup1">Réserver</a>
+                </div>
+            </div>
+        </div>
     </Section>
+                
+    
+    <div id="popup1" class="overlay">
+        <div class="popup">
+            <h2>Réservation gratuite</h2>
+            
+            <div class="content">
+                <form>
+                    <label>Nombre de participant ?</label>
+                    <input type="number" name="NbParticipant" required>
+                    <label>Courriel</label>
+                    <input type="email"  name="email" required>
+                </form>
+                
+                Suite à votre validation un courriel de confirmation vous sera envoyé.
+            </div>
+            <div class="bouton">
+                <a class="close" href="#">Annuler</a>
+                <button class="close" type="submit">Reserver</button>
+            </div>
+        </div>
+    </div>
 
     <Footer>
         <nav class="pied">

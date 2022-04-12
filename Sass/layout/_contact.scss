@@ -1,0 +1,30 @@
+.contact{
+    margin: 3%;
+    h2{
+        color: $couleur-tertiaire;
+    }
+    .adress{
+        margin-bottom: 3%;
+        padding: 1%;
+        border: 3px solid $couleur-secondaire;
+        box-shadow: 5px 5px 4px $couleur-primaire;
+        width: 10%;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+        input, textarea{
+            border: 3px solid $couleur-secondaire;
+        }
+        button{
+            margin-top: 3%;
+            margin-left: 35%;
+            padding: 1%;
+            width: 30%;
+            border: 3px solid $couleur-secondaire;
+            box-shadow: 5px 5px 4px $couleur-primaire;
+            cursor: pointer;
+        }
+    }
+}

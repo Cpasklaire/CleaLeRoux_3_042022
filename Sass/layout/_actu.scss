@@ -1,0 +1,19 @@
+.actualité{
+    margin: 5%;
+    h2{
+        margin-bottom: 3%;
+    }
+    article{
+        margin-bottom: 3%;
+        padding: 1%;
+        border: 3px solid $couleur-secondaire;
+        box-shadow: 5px 5px 4px $couleur-primaire;
+        h3{
+            color: $couleur-tertiaire;
+        }
+        img{
+            width: 15%;
+            float: right;
+        }
+    }
+}

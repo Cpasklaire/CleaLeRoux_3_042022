@@ -1,0 +1,23 @@
+.Sprog{
+    margin: 3%;
+    .row{
+        display: flex;
+        .jour{
+            margin: 3%;
+            padding: 1%;
+            border: 3px solid $couleur-secondaire;
+            box-shadow: 5px 5px 4px $couleur-primaire;
+            width: 40%;
+            h3{
+                color: $couleur-tertiaire;
+            }
+            img{
+                width: 15%;
+                float: right;
+            }
+            span{
+                margin-bottom: 3%;
+            }
+        }
+    }
+}
