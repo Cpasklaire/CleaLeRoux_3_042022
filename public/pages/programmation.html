@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/c30b777b7c.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="public/css/style.css" />
+    <link rel="stylesheet" href="/../public/css/style.css" />
     <title>Les Films de Plein Air</title>
 </head>
-<body>
+<body class="prog">
 
     <header>
         <div class="pc">
+            <a href="/../../index.html" class="titre">Les films en plein air</a>
             <nav class="__tete">
                 <li><a href="programmation.html">Programmation et reservation</a></li>
                 <li><a href="actualite.html">Actualité</a></li>
@@ -18,28 +19,37 @@
         </div>
     </header>
 
-    <Section class="contact">
-        <h1>Pour nous contacter</h1>
-        <div class="adress">
-            18 rue de jesaispasquoi
-            hfjgfiejf
-            Tel : 0000000000
-            De 9h à 10h
-        </div>
-
-        <form id="message">
-
-              <label>Nom</label>
-              <input type="text" class="form-control" name="lastName"required>
-
-              <label>Courriel</label>
-                <input type="email"  name="email" required>
-
-              <label>Message</label>
-              <input type="text" name="text" required>
-
-              <button type="submit">Envoyer</button>
-          </form>
+    <Section class="5aout">
+        <h2>Le 5 aûot</h2>
+            <div class="__film">
+                <h3>4rooms</h3>
+                <img src="" alt="">
+                <span>sinopsys : </span>
+                <span>Horaire : </span>
+                <button href="#popup-4rooms">Réservation</button>
+                <div id="popup-4rooms" class="overlay">
+                    <div class="popup">
+                        <a class="close" href="#">&times;</a>
+                        <div class="apercu">
+                            <div class="titre">
+                                <h4>Création un réseau social d’entreprise</h4>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <a class="button" href="#popup1">Let me Pop up</a>
+                </div>
+                
+                <div id="popup1" class="overlay">
+                    <div class="popup">
+                        <h2>Here i am</h2>
+                        <a class="close" href="#">&times;</a>
+                        <div class="content">
+                            Thank to pop me out of that button, but now i'm done so you can close this window.
+                        </div>
+                    </div>
+                </div>
     </Section>
 
     <Footer>
