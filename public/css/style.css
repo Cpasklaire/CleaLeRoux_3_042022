@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*Général*/
 @font-face {
   font-family: "cheddar";
   src: url(../../public/police/Cheddar\ Gothic\ Sans.otf);
@@ -19,6 +20,9 @@
 
 body {
   background-color: #F8EBCB;
+}
+body section {
+  margin: 3%;
 }
 
 header {
@@ -63,20 +67,19 @@ footer nav li a {
   color: #F8EBCB;
 }
 
-.prog .button {
-  margin-top: 5%;
-  margin-left: 35%;
-  padding: 0.5%;
-  width: 30%;
+/*Bouton*/
+button, .button {
+  cursor: pointer;
   border: 3px solid #102832;
   box-shadow: 5px 5px 4px #0B717F;
-  background-color: #F8EBCB;
-  cursor: pointer;
+  padding: 1%;
 }
-.prog .button:hover {
-  color: #0B717F;
+button:hover, .button:hover {
+  box-shadow: 10px 10px 4px #0B717F;
 }
-.prog .overlay {
+
+/*pop up*/
+.overlay {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -87,11 +90,11 @@ footer nav li a {
   visibility: hidden;
   opacity: 0;
 }
-.prog .overlay:target {
+.overlay:target {
   visibility: visible;
   opacity: 1;
 }
-.prog .popup {
+.overlay .popup {
   margin: 70px auto;
   padding: 20px;
   background: #fff;
@@ -100,50 +103,33 @@ footer nav li a {
   position: relative;
   transition: all 5s ease-in-out;
 }
-.prog .popup h2 {
+.overlay .popup h2 {
   margin-top: 0;
 }
-.prog .popup .close {
-  transition: all 200ms;
-  text-decoration: none;
-  color: #333;
-}
-.prog .popup .close:hover {
-  color: #0B717F;
-}
-.prog .popup .content {
+.overlay .popup .content {
   max-height: 30%;
   overflow: auto;
 }
-.prog form {
+.overlay .popup .content form {
   display: flex;
   flex-direction: column;
   margin-top: 3%;
   margin-bottom: 3%;
 }
-.prog form input {
+.overlay .popup .content form input {
   border: 3px solid #102832;
   width: 50%;
 }
-.prog .bouton {
+.overlay .popup .bouton {
   margin: 5%;
   width: 50%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.prog .bouton a, .prog .bouton button {
-  size: 1em;
+.overlay .popup .bouton a {
   margin-top: 3%;
   margin-left: 35%;
-  padding: 1%;
-  border: 3px solid #102832;
-  box-shadow: 5px 5px 4px #0B717F;
-  cursor: pointer;
-}
-
-.index .festival {
-  margin: 3%;
 }
 
 .actualité {
@@ -166,13 +152,6 @@ footer nav li a {
   float: right;
 }
 
-.confidentialité {
-  margin: 3%;
-}
-
-.contact {
-  margin: 3%;
-}
 .contact h2 {
   color: #D4566C;
 }
@@ -194,16 +173,9 @@ footer nav li a {
 .contact form button {
   margin-top: 3%;
   margin-left: 35%;
-  padding: 1%;
   width: 30%;
-  border: 3px solid #102832;
-  box-shadow: 5px 5px 4px #0B717F;
-  cursor: pointer;
 }
 
-.infos {
-  margin: 3%;
-}
 .infos h2 {
   color: #D4566C;
 }
@@ -211,28 +183,25 @@ footer nav li a {
   width: 40%;
 }
 
-.Sprog {
-  margin: 3%;
-}
-.Sprog .row {
+.prog .row {
   display: flex;
 }
-.Sprog .row .jour {
+.prog .row .jour {
   margin: 3%;
   padding: 1%;
   border: 3px solid #102832;
   box-shadow: 5px 5px 4px #0B717F;
   width: 40%;
 }
-.Sprog .row .jour h3 {
+.prog .row .jour h3 {
   color: #D4566C;
 }
-.Sprog .row .jour img {
+.prog .row .jour img {
   width: 15%;
   float: right;
 }
-.Sprog .row .jour span {
-  margin-bottom: 3%;
+.prog .row .jour .button {
+  margin-left: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */

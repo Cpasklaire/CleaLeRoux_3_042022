@@ -1,3 +1,4 @@
+/*Général*/
 @font-face {
     font-family: 'cheddar';
     src: url(../../public/police/Cheddar\ Gothic\ Sans.otf);}
@@ -6,17 +7,15 @@
     font-family: 'opendyslexic';
     src: url(../../public/police/OpenDyslexic-Regular.otf);}
     
+$font-titre: 'cheddar';
+$font-texte: 'opendyslexic';
+
 $couleur-primaire: #0B717F;
 $couleur-secondaire: #102832;
 $couleur-tertiaire: #D4566C; 
-$couleur-ombre: #aaa0a8; 
-
-$font-titre: 'cheddar';
-$font-texte: 'opendyslexic';
 $couleur-texte: #F8EBCB;
 
-*
-{
+*{
     font-family: $font-texte, Arial, serif;
     color: black;   
     text-decoration: none;
@@ -27,4 +26,7 @@ $couleur-texte: #F8EBCB;
 }
 body{
     background-color: $couleur-texte;
+    section{
+        margin: 3%;
+    }
 }

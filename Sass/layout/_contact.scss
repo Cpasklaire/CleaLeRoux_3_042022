@@ -1,5 +1,4 @@
 .contact{
-    margin: 3%;
     h2{
         color: $couleur-tertiaire;
     }
@@ -20,11 +19,7 @@
         button{
             margin-top: 3%;
             margin-left: 35%;
-            padding: 1%;
             width: 30%;
-            border: 3px solid $couleur-secondaire;
-            box-shadow: 5px 5px 4px $couleur-primaire;
-            cursor: pointer;
         }
     }
 }
