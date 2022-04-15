@@ -25,10 +25,11 @@ body section {
   margin: 3%;
 }
 
+/*header*/
 header {
   background-color: #102832;
 }
-header .pc {
+header div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -38,20 +39,21 @@ header .pc {
   padding-top: 1%;
   padding-bottom: 1%;
 }
-header .pc a, header .pc nav, header .pc h1 {
+header div a, header div nav, header div h1 {
   color: #F8EBCB;
 }
-header .pc h1 {
+header div h1 {
   font-family: "cheddar";
   font-size: 3em;
 }
-header .pc nav {
+header div nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-basis: 25%;
 }
 
+/*footer*/
 footer {
   background-color: #102832;
 }
@@ -132,6 +134,7 @@ button:hover, .button:hover {
   margin-left: 35%;
 }
 
+/*page actu*/
 .actualité {
   margin: 5%;
 }
@@ -152,6 +155,7 @@ button:hover, .button:hover {
   float: right;
 }
 
+/*Page contact*/
 .contact h2 {
   color: #D4566C;
 }
@@ -176,6 +180,7 @@ button:hover, .button:hover {
   width: 30%;
 }
 
+/*page information*/
 .infos h2 {
   color: #D4566C;
 }
@@ -183,6 +188,7 @@ button:hover, .button:hover {
   width: 40%;
 }
 
+/*page programmation et réservation*/
 .prog .row {
   display: flex;
 }
@@ -202,6 +208,54 @@ button:hover, .button:hover {
 }
 .prog .row .jour .button {
   margin-left: 50%;
+}
+
+/*responsive*/
+@media (max-width: 760px) {
+  .actualité p {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  .prog .row {
+    display: block;
+  }
+  .prog .row .jour {
+    width: 90%;
+  }
+  .prog .row .jour img {
+    width: 90%;
+    float: none;
+  }
+
+  .contact .adress {
+    margin-bottom: 3%;
+    padding: 1%;
+    width: 90%;
+  }
+  .contact form {
+    width: 90%;
+  }
+
+  .overlay .popup .content form input {
+    width: 90%;
+  }
+  .overlay .popup .bouton {
+    width: 60%;
+    flex-direction: column-reverse;
+  }
+  .overlay .popup .bouton a {
+    margin-left: 0%;
+  }
+}
+@media (max-width: 1500px) {
+  header div nav {
+    flex-direction: column;
+  }
+  header div nav li {
+    margin-bottom: 10%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
